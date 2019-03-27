@@ -16,7 +16,7 @@
         "description": "DNS domain name for existing Active Directory domain"
       }
     },
-	"ouName": {
+    "ouName": {
       "type": "string",
       "metadata": {
         "description": "The distinguished name of the organizational unit that the computer account will be created in."
