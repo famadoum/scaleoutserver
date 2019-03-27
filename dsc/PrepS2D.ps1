@@ -10,7 +10,7 @@ configuration PrepS2D
         [String]$DomainName,
 
 		[Parameter(Mandatory)]
-        [String]$OUName,
+        [String]$ouName,
 		
         [Parameter(Mandatory)]
         [System.Management.Automation.PSCredential]$AdminCreds,
@@ -67,7 +67,7 @@ configuration PrepS2D
         {
             Name = $env:COMPUTERNAME
             DomainName = $DomainName
-			JoinOU = $OUName
+			JoinOU = $ouName
             Credential = $DomainCreds
             DependsOn = "[xWaitForADDomain]DscForestWait"
         }

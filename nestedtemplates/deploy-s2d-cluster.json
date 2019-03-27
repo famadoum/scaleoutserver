@@ -16,6 +16,12 @@
         "description": "DNS domain name for existing Active Directory domain"
       }
     },
+	"ouName": {
+      "type": "string",
+      "metadata": {
+        "description": "The distinguished name of the organizational unit that the computer account will be created in."
+      }
+    },
     "adminUsername": {
       "type": "string",
       "metadata": {
@@ -280,6 +286,7 @@
           "configurationFunction": "[variables('s2dPrepFunction')]",
           "properties": {
             "domainName": "[parameters('domainName')]",
+			"ouName": "[parameters('ouName')]",
             "adminCreds": {
               "userName": "[parameters('adminUsername')]",
               "password": "PrivateSettingsRef:adminPassword"
@@ -313,6 +320,7 @@
           "configurationFunction": "[variables('s2dConfigFunction')]",
           "properties": {
             "domainName": "[parameters('domainName')]",
+			"ouName": "[parameters('ouName')]",
             "clusterName": "[variables('clusterName')]",
             "sofsName": "[parameters('sofsName')]",
             "shareName": "[parameters('shareName')]",
