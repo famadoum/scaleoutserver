@@ -63,12 +63,6 @@
         "description": "DNS domain name for existing Active Directory domain"
       }
     },
-	"existingOUName": {
-      "type": "string",
-      "metadata": {
-        "description": "The distinguished name of the organizational unit that the computer account will be created in."
-      }
-    },
     "adminUsername": {
       "type": "string",
       "metadata": {
@@ -152,9 +146,6 @@
           },
           "domainName": {
             "value": "[parameters('existingDomainName')]"
-          },
-		  "ouName": {
-            "value": "[parameters('existingOUName')]"
           },
           "adminUsername": {
             "value": "[parameters('adminUsername')]"

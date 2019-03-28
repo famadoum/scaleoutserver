@@ -8,9 +8,6 @@
     "existingDomainName": {
       "value": "contoso.com"
     },
-    "existingOUName": {
-      "value": "OU="
-    },
     "adminUsername": {
       "value": "AzureAdmin"
     },
